@@ -1,0 +1,119 @@
+{
+  "appPageId" : "b5f33678-a7b0-4c4e-8ff6-08d366a30ead",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "8b470972-cb43-4472-b78e-1301dffc3e69",
+  "label" : "Account Management",
+  "regions" : [ {
+    "id" : "6d6e0c25-daf8-44e3-b8ca-c00959f7b4cc",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "367bf3e8-e538-4832-8b1a-d0c523c9e85b",
+          "activeTab" : "tab1",
+          "tabs" : [ {
+            "UUID" : "1a4ed5d6-3185-4124-8649-75edb018ff83",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "customTitle" : "Members",
+                "parentRecordId" : "{!CurrentUser.accountId}",
+                "relatedListName" : "Users",
+                "showBreadCrumbs" : "false",
+                "showCustomTitle" : "true",
+                "showManualRefreshButton" : "false",
+                "showRowNumbers" : "false"
+              },
+              "fqn" : "forceCommunity:relatedList"
+            } ],
+            "tabKey" : "tab1",
+            "tabName" : "Members"
+          }, {
+            "UUID" : "4ec17977-7660-4181-809e-eb1444a9bf63",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "recordId" : "{!CurrentUser.accountId}"
+              },
+              "fqn" : "forceCommunity:accountBrandRecord"
+            } ],
+            "tabKey" : "tab2",
+            "tabName" : "Branding"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "367bf3e8-e538-4832-8b1a-d0c523c9e85b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "customTitle" : "Members",
+            "parentRecordId" : "{!CurrentUser.accountId}",
+            "relatedListName" : "Users",
+            "showBreadCrumbs" : false,
+            "showCustomTitle" : true,
+            "showManualRefreshButton" : false,
+            "showRowNumbers" : false
+          },
+          "componentName" : "forceCommunity:relatedList",
+          "id" : "a47dcda9-ff93-4c18-be82-188b7fbf5455",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1a4ed5d6-3185-4124-8649-75edb018ff83",
+        "regionLabel" : "Members",
+        "regionName" : "tab1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!CurrentUser.accountId}"
+          },
+          "componentName" : "forceCommunity:accountBrandRecord",
+          "id" : "c3f70174-a275-4476-86aa-3a6788cbec9c",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "4ec17977-7660-4181-809e-eb1444a9bf63",
+        "regionLabel" : "Branding",
+        "regionName" : "tab2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "39c943b6-d581-4396-bd33-760c581f8687",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "68699f85-3913-45e4-a188-bf2987c89d08",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Account Management"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cefae868-3ee5-45e1-a7a4-2b88d46d22e6",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b5d01042-81cd-4b67-a7d1-069d57052587",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "account-management"
+}
