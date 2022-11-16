@@ -26,7 +26,7 @@
       "componentAttributes" : {
         "actions" : [ {
           "isPublic" : true,
-          "name" : "NewAccount"
+          "name" : "NewLead"
         } ],
         "label" : "Contact Us"
       },
